@@ -1,0 +1,26 @@
+.profilepic {
+    background-image: url(../image/profilepic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkcyan;
+    height: 769px;
+    width: 100%;
+}
+
+#line1 {
+    font-size: 38px;
+    text-align: center;
+    padding-top: 25%;
+    color: black;
+}
+
+#line1 span {
+    color: rgb(160, 46, 1);
+}
+
+#line2 {
+    font-size: 38px;
+    text-align: center;
+    padding-top: 3%;
+    color: black;
+}
