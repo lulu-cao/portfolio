@@ -128,9 +128,7 @@ main section {
 }
 
 #projects h1 {
-    padding-right: 2%;
-    border-right: 5px solid var(--text);
-    text-align: right; 
+    border-right: 5px solid var(--text); 
     flex: 0 0 20%;
 }
 
@@ -173,6 +171,12 @@ main section {
 
 #zhanshu {
     background-image: url("../image/zhanshu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#euie {
+    background-image: url("../image/euie.jpg");
     background-size: cover;
     background-position: center;
 }
