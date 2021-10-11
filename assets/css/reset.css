@@ -1,3 +1,4 @@
+/* reset the style of the website */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
   
   body {
     min-height: 100%;
-    line-height: 1;
+    line-height: 1.5;
     font-family: sans-serif;
   }
   
@@ -26,4 +27,9 @@
   
   ol, ul {
     list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }

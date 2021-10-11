@@ -1,5 +1,28 @@
+/* set up variables for colors to use in the website */
+:root {
+    --main: rgb(104, 212, 248);
+    --text: lightblue;
+    --back: rgb(2, 37, 88); 
+}
+
+body {
+    color: var(--text);
+    background-color: var(--back);
+}
+
+h1 {
+    font-size: 3vw;
+    margin: 2%;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+/* set up profile pic of the night sky */
 .profilepic {
-    background-image: url(../image/profilepic1.jpg);
+    background-image: url("../image/profilepic1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darkcyan;
@@ -8,10 +31,11 @@
 }
 
 #line1 {
-    font-size: 38px;
     text-align: center;
     padding-top: 25%;
     color: black;
+    margin: 0;
+    line-height: 1;
 }
 
 #line1 span {
@@ -19,8 +43,123 @@
 }
 
 #line2 {
-    font-size: 38px;
     text-align: center;
     padding-top: 3%;
     color: black;
+    margin: 0;
+    line-height: 1;
+}
+
+/* make the header of the page contain name on the left and navbar on the right */
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(1, 4, 41);
+}
+
+header h3 {
+    font-family: serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: serif;
+}
+
+nav a {
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 88%;
+}
+
+/* the sections are stretched so that their margin-box will be the same with the line; e.g. the border of projects will be of the similar height with its content */
+main section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#about, #projects, #contact {
+    padding-right: 2%;
+    border-right: 5px solid var(--text);
+    text-align: right; 
+    flex: 0 0 20%;
+}
+
+.about {
+    align-items: center;
+}
+
+#about {
+    margin-top: 5%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-end;
+    border: 1px solid var(--main);
+    background-size: 150%;
+    height: 250px;
+    width: 430px;
+    background-blend-mode: soft-light;
+    transition: all 0.5s;    
+    background-color: var(--main);
+}
+
+/* the last number within an RGBA color value is an alpha parameter that controls opacity */
+.projects:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#projecttitle {
+    background-color: var(--back);
+    opacity: 80%;
+    padding: 3px 5px;
+}
+
+#huge {
+    background-image: url("../image/huge.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#zhanshu {
+    background-image: url("../image/zhanshu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    align-items: center;
+}
+
+address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+address a {
+    font-style: normal;
+    text-decoration: underline;
+    padding: 5px;
 }
