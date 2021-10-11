@@ -20,7 +20,7 @@ h2 {
     font-size: 2vw;
 }
 
-/* set up profile pic of the night sky */
+/* set up profile pic as the night sky */
 .profilepic {
     background-image: url("../image/profilepic1.jpg");
     background-repeat: no-repeat;
@@ -76,8 +76,15 @@ nav {
 
 nav a {
     font-size: 18px;
+    text-decoration: underline;
     margin-right: 10px;
     padding: 5px 5px;
+}
+
+/* inset shadows will appear inside the borders once hovering */
+nav a:hover {
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0.6px 0.6px var(--text);
 }
 
 /* the sections are stretched so that their margin-box will be the same with the line; e.g. the border of projects will be of the similar height with its content */
@@ -97,21 +104,39 @@ main section {
     align-items: stretch;
 }
 
-#about, #projects, #contact {
+/* the about section */
+#about div {
+    text-align: center;
+    align-items: center;
+    margin: 15% auto;
+    line-height: 2;
+    font-size: 18px;
+}
+
+#myphoto {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+/* the project section */
+/* setting up the flex container */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects h1 {
     padding-right: 2%;
     border-right: 5px solid var(--text);
     text-align: right; 
     flex: 0 0 20%;
 }
 
-.about {
-    align-items: center;
-}
-
+/* setting up the class for each separate project */
 .projects {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
     align-items: flex-end;
     border: 1px solid var(--main);
     background-size: 150%;
@@ -122,10 +147,17 @@ main section {
     background-color: var(--main);
 }
 
-/* the last number within an RGBA color value is an alpha parameter that controls opacity */
+.projects:first-child {
+    flex-basis: 100%;
+}
+
+#projects div {
+    padding: 8px 10px;
+}
+
 .projects:hover {
     background-color: rgba(0, 0, 0, 0);
-}
+} /* the last number within an RGBA color value is an alpha parameter that controls opacity */
 
 #projecttitle {
     background-color: var(--back);
@@ -133,8 +165,8 @@ main section {
     padding: 3px 5px;
 }
 
-#huge {
-    background-image: url("../image/huge.jpg");
+#password {
+    background-image: url("");
     background-size: cover;
     background-position: center;
 }
@@ -145,19 +177,50 @@ main section {
     background-position: center;
 }
 
-.contact {
+#huge {
+    background-image: url("../image/huge.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* the contact section, aka the footer*/
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    background-color: rgb(1, 4, 41);
+}
+
+footer h3 {
+    font-family: serif;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    font-family: serif;
 }
 
 address a {
     font-style: normal;
     text-decoration: underline;
-    padding: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+address a:hover {
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0.6px 0.6px var(--text);
+}
+
+@media screen and (max-width: 968px) {
+
+    
 }
