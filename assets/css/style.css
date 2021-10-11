@@ -80,14 +80,16 @@ nav a {
     padding: 5px 5px;
 }
 
+/* the sections are stretched so that their margin-box will be the same with the line; e.g. the border of projects will be of the similar height with its content */
 main {
-    margin: 20px auto;
-    max-width: 88%;
+    background-image: url("../image/profilepic2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
-/* the sections are stretched so that their margin-box will be the same with the line; e.g. the border of projects will be of the similar height with its content */
 main section {
-    margin: 25px 0;
+    margin-bottom: 40px;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
@@ -104,10 +106,6 @@ main section {
 
 .about {
     align-items: center;
-}
-
-#about {
-    margin-top: 5%;
 }
 
 .projects {
