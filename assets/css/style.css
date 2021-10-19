@@ -1,10 +1,11 @@
-/* set up variables for colors to use in the website */
+/* setting the variables for colors to use in the website */
 :root {
     --main: rgb(104, 212, 248);
     --text: lightblue;
     --back: rgb(2, 37, 88); 
 }
 
+/* setting the general style of body and different titles */
 body {
     color: var(--text);
     background-color: var(--back);
@@ -21,12 +22,12 @@ h2 {
 }
 
 /* set up profile pic as the night sky */
-.profilepic {
+#profilepic {
     background-image: url("../image/profilepic1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darkcyan;
-    height: 769px;
+    height: 768px;
     width: 100%;
 }
 
@@ -129,7 +130,7 @@ main section {
 
 #projects h1 {
     border-right: 5px solid var(--text); 
-    flex: 0 0 20%;
+    flex: 0 0 15%;
 }
 
 /* setting up the class for each separate project */
@@ -143,10 +144,6 @@ main section {
     background-blend-mode: soft-light;
     transition: all 0.5s;    
     background-color: var(--main);
-}
-
-.projects:first-child {
-    flex-basis: 100%;
 }
 
 #projects div {
@@ -163,8 +160,8 @@ main section {
     padding: 3px 5px;
 }
 
-#password {
-    background-image: url("");
+#ethics {
+    background-image: url("../image/ethics.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -224,7 +221,62 @@ address a:hover {
     text-shadow: 0.6px 0.6px var(--text);
 }
 
-@media screen and (max-width: 968px) {
+/* mobile responsive */
+@media screen and (max-width: 1024px) {
+    #line1 {
+        padding-top: 310px;
+        padding-left: 20px;
+    }
 
+    #line2 {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #line1 {
+        text-align: right;
+        padding-top: 360px;
+        font-weight: 730;
+        font-size: 20px;
+    }
+
+    #line2 {
+        text-align: right;
+        font-weight: 730;
+        font-size: 20px;
+    }
+
+    #projects h1 {
+        border-right: none; 
+        text-align: center;
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .container {
+        max-width: 520px;
+        overflow: hidden;
+    }        
     
+    header {
+        flex-direction: column;
+    }
+
+    address {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 413px) {
+    .container {
+        max-width: 400px;
+        overflow: hidden;
+    }     
+
+    .projects {
+        width: 300px;
+    }
 }
