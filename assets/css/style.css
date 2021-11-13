@@ -141,18 +141,19 @@ main section {
     background-size: 150%;
     height: 250px;
     width: 430px;
-    background-blend-mode: soft-light;
-    transition: all 0.5s;    
-    background-color: var(--main);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #projects div {
     padding: 8px 10px;
 }
 
-.projects:hover {
-    background-color: rgba(0, 0, 0, 0);
-} /* the last number within an RGBA color value is an alpha parameter that controls opacity */
+/* .projects:hover {
+    background-blend-mode: soft-light;
+    transition: all 0.5s;    
+    background-color: var(--main);
+}  */
+/*the last number within an RGBA color value is an alpha parameter that controls opacity*/
 
 #projecttitle {
     background-color: var(--back);
@@ -161,13 +162,19 @@ main section {
 }
 
 #ethics {
-    background-image: url("../image/ethics.jpg");
+    background-image: url("../image/ethics.png");
     background-size: cover;
     background-position: center;
 }
 
 #zhanshu {
-    background-image: url("../image/zhanshu.jpg");
+    background-image: url("../image/zhanshu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#cultivate {
+    background-image: url("../image/cultivate-community.png");
     background-size: cover;
     background-position: center;
 }
