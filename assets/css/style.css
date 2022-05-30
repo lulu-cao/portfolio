@@ -1,289 +1,299 @@
 /* setting the variables for colors to use in the website */
 :root {
-    --main: rgb(104, 212, 248);
-    --text: lightblue;
-    --back: rgb(2, 37, 88); 
+  --main: rgb(104, 212, 248);
+  --text: lightblue;
+  --back: rgb(2, 37, 88);
 }
 
 /* setting the general style of body and different titles */
 body {
-    color: var(--text);
-    background-color: var(--back);
+  color: var(--text);
+  background-color: var(--back);
 }
 
 h1 {
-    font-size: 3vw;
-    margin: 2%;
-    line-height: 1.5;
+  font-size: 3vw;
+  margin: 2%;
+  line-height: 1.5;
 }
 
 h2 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 /* set up profile pic as the night sky */
 #profilepic {
-    background-image: url("../image/profilepic1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: darkcyan;
-    height: 768px;
-    width: 100%;
+  background-image: url("../image/profilepic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: darkcyan;
+  height: 768px;
+  width: 100%;
 }
 
 #line1 {
-    text-align: center;
-    padding-top: 25%;
-    color: black;
-    margin: 0;
-    line-height: 1;
+  text-align: center;
+  padding-top: 25%;
+  color: black;
+  margin: 0;
+  line-height: 1;
 }
 
 #line1 span {
-    color: rgb(160, 46, 1);
+  color: rgb(160, 46, 1);
 }
 
 #line2 {
-    text-align: center;
-    padding-top: 3%;
-    color: black;
-    margin: 0;
-    line-height: 1;
+  text-align: center;
+  padding-top: 3%;
+  color: black;
+  margin: 0;
+  line-height: 1;
 }
 
 /* make the header of the page contain name on the left and navbar on the right */
 header {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgb(1, 4, 41);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(1, 4, 41);
 }
 
 header h3 {
-    font-family: serif;
-    font-size: 18px;
-    margin-left: 10px;
+  font-family: serif;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-family: serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: serif;
 }
 
 nav a {
-    font-size: 18px;
-    text-decoration: underline;
-    margin-right: 10px;
-    padding: 5px 5px;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-right: 10px;
+  padding: 5px 5px;
 }
 
 /* inset shadows will appear inside the borders once hovering */
 nav a:hover {
-    transition: all 0.5s ease-in-out;
-    text-shadow: 0.6px 0.6px var(--text);
+  transition: all 0.5s ease-in-out;
+  text-shadow: 0.6px 0.6px var(--text);
 }
 
 /* the sections are stretched so that their margin-box will be the same with the line; e.g. the border of projects will be of the similar height with its content */
 main {
-    background-image: url("../image/profilepic2.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+  background-image: url("../image/profilepic2.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 main section {
-    margin-bottom: 40px;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 /* the about section */
 #about div {
-    text-align: center;
-    align-items: center;
-    margin: 15% auto;
-    line-height: 2;
-    font-size: 18px;
+  text-align: center;
+  align-items: center;
+  margin: 15% auto;
+  line-height: 2;
+  font-size: 18px;
 }
 
 #myphoto {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 30px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 30px;
 }
 
 /* the project section */
 /* setting up the flex container */
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* #projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
 
-#projects h1 {
-    border-right: 5px solid var(--text); 
-    flex: 0 0 15%;
+/* #projects h1 {
+  border-right: 5px solid var(--text);
+  flex: 0 0 15%;
+} */
+
+#projectContainer {
+  width: 1100px;
 }
 
 /* setting up the class for each separate project */
-.projects {
-    display: flex;
-    align-items: flex-end;
-    border: 1px solid var(--main);
-    background-size: 150%;
-    height: 250px;
-    width: 430px;
-    background-color: rgba(0, 0, 0, 0);
+.projectLinks {
+  /* display: flex;
+  align-items: flex-end; */
+  border: 1px solid var(--main);
+  background-size: 150%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-#projects div {
-    padding: 8px 10px;
+#projectLinks div {
+  padding: 8px 10px;
 }
 
-/* .projects:hover {
-    background-blend-mode: soft-light;
-    transition: all 0.5s;    
-    background-color: var(--main);
-}  */
+.projectItems {
+  display: inline-block;
+  width: 32%;
+  height: 260px;
+  margin-top: 2rem;
+}
+
+.projectLinks:hover {
+  background-blend-mode: soft-light;
+  transition: all 0.5s;
+  background-color: var(--main);
+}
 /*the last number within an RGBA color value is an alpha parameter that controls opacity*/
 
-#projecttitle {
-    background-color: var(--back);
-    opacity: 80%;
-    padding: 3px 5px;
+.projectTitle {
+  background-color: lightblue;
+  opacity: 80%;
+  padding: 3px 5px;
+  color: black;
+}
+
+#ethics,
+#zhanshu,
+#cultivate,
+#euie,
+#huge {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
 }
 
 #ethics {
-    background-image: url("../image/ethics.png");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../image/ethics.png");
 }
 
 #zhanshu {
-    background-image: url("../image/zhanshu.png");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../image/zhanshu.png");
 }
 
 #cultivate {
-    background-image: url("../image/cultivate-community.png");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../image/cultivate-community.png");
 }
 
 #euie {
-    background-image: url("../image/euie.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../image/euie.jpg");
 }
 
 #huge {
-    background-image: url("../image/huge.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../image/huge.jpg");
 }
 
 /* the contact section, aka the footer*/
 footer {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: rgb(1, 4, 41);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(1, 4, 41);
 }
 
 footer h3 {
-    font-family: serif;
-    font-size: 18px;
-    margin-left: 10px;
+  font-family: serif;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 address {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-family: serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: serif;
 }
 
 address a {
-    font-style: normal;
-    text-decoration: underline;
-    font-size: 18px;
-    margin-right: 10px;
-    padding: 5px 5px;
+  font-style: normal;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 5px 5px;
 }
 
 address a:hover {
-    transition: all 0.5s ease-in-out;
-    text-shadow: 0.6px 0.6px var(--text);
+  transition: all 0.5s ease-in-out;
+  text-shadow: 0.6px 0.6px var(--text);
 }
 
 /* mobile responsive */
 @media screen and (max-width: 1024px) {
-    #line1 {
-        padding-top: 310px;
-        padding-left: 20px;
-    }
+  #line1 {
+    padding-top: 310px;
+    padding-left: 20px;
+  }
 
-    #line2 {
-        padding-left: 20px;
-    }
+  #line2 {
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #line1 {
-        text-align: right;
-        padding-top: 360px;
-        font-weight: 730;
-        font-size: 20px;
-    }
+  #line1 {
+    text-align: right;
+    padding-top: 360px;
+    font-weight: 730;
+    font-size: 20px;
+  }
 
-    #line2 {
-        text-align: right;
-        font-weight: 730;
-        font-size: 20px;
-    }
+  #line2 {
+    text-align: right;
+    font-weight: 730;
+    font-size: 20px;
+  }
 
-    #projects h1 {
-        border-right: none; 
-        text-align: center;
-        font-size: 7vw;
-    }
+  #projects h1 {
+    border-right: none;
+    text-align: center;
+    font-size: 7vw;
+  }
 }
 
 @media screen and (max-width: 539px) {
-    .container {
-        max-width: 520px;
-        overflow: hidden;
-    }        
-    
-    header {
-        flex-direction: column;
-    }
+  .container {
+    max-width: 520px;
+    overflow: hidden;
+  }
 
-    address {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
+  address {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 413px) {
-    .container {
-        max-width: 400px;
-        overflow: hidden;
-    }     
+  .container {
+    max-width: 400px;
+    overflow: hidden;
+  }
 
-    .projects {
-        width: 300px;
-    }
+  .projects {
+    width: 300px;
+  }
 }
