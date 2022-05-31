@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="keywords" content="Lulu Cao, Web Developer" />
     <meta name="author" content="Lulu Cao" />
-    <!-- the meta viewport element sets the width of the page to the screen-width of the device and sets the initial zoom level when the page is loaded -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Lulu Cao</title>
@@ -13,7 +12,7 @@
   </head>
 
   <body>
-    <!-- the first page and my brief intro -->
+    <!-- the first page of the portfolio -->
     <div id="profilepic" class="container">
       <h1 id="line1">Hello, I'm <span>Lulu Cao</span>.</h1>
       <h1 id="line2">I'm a full-stack web developer.</h1>
@@ -26,7 +25,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="assets/resume.pdf">Resume</a>
+        <a href="./assets/resume.pdf">Resume</a>
       </nav>
     </header>
 
@@ -34,7 +33,11 @@
       <!-- the about section -->
       <section id="about" class="container">
         <div>
-          <img src="assets/image/myphoto.jpg" alt="Lulu's photo" id="myphoto" />
+          <img
+            src="./assets/image/myphoto.jpg"
+            alt="Lulu's photo"
+            id="myphoto"
+          />
           <p>
             I am a full-stack web developer, passionate about inspiring designs.
             My skills include HTML, CSS, JavaScript, jQuery, Bootstrap, Node.js,
@@ -48,67 +51,60 @@
       </section>
 
       <!-- the projects section -->
-      <section id="projectSection" class="container">
+      <section id="projects" class="container">
         <h1>Projects</h1>
 
         <div id="projectContainer">
           <div class="projectItems">
-            <div id="zhanshu" class="projectLinks"></div>
-            <div class="projectTitle">
-              <h3>
-                <a href="https://lulu-cao.github.io/zhanshu_electronic/"
-                  >Zhanshu Website</a
-                >
-              </h3>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
+            <a href="https://lulu-cao.github.io/zhanshu_electronic/">
+              <div id="zhanshu" class="projectLinks"></div>
+              <div class="projectTitle">
+                <h3>Zhanshu Website</h3>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+            </a>
           </div>
 
           <div class="projectItems">
-            <div id="cultivate" class="projectLinks"></div>
-            <div class="projectTitle">
-              <h3>
-                <a
-                  href="https://lulu-cao.github.io/cultivate-community-front-end/index.html"
-                  >Cultivate Community</a
-                >
-              </h3>
-              <p>HTML, Bootstrap, CSS</p>
-            </div>
+            <a
+              href="https://lulu-cao.github.io/cultivate-community-front-end/index.html"
+            >
+              <div id="cultivate" class="projectLinks"></div>
+              <div class="projectTitle">
+                <h3>Cultivate Community</h3>
+                <p>HTML, Bootstrap, CSS</p>
+              </div>
+            </a>
           </div>
 
           <div class="projectItems">
-            <div id="ethics" class="projectLinks"></div>
-            <div class="projectTitle">
-              <h3>
-                <a href="https://lulu-cao.github.io/ethics-class/"
-                  >Ethics Class</a
-                >
-              </h3>
-              <p>JavaScript, jQuery, Bootstrap</p>
-            </div>
+            <a href="https://lulu-cao.github.io/ethics-class/">
+              <div id="ethics" class="projectLinks"></div>
+              <div class="projectTitle">
+                <h3>Ethics Class</h3>
+                <p>JavaScript, jQuery, Bootstrap</p>
+              </div>
+            </a>
           </div>
 
           <div class="projectItems">
-            <div id="euie" class="projectLinks"></div>
-            <div class="projectTitle">
-              <h3>
-                <a href="https://lulu-cao.github.io/euie/">Euie's Story</a>
-              </h3>
-              <p>JavaScript, HTML, CSS</p>
-            </div>
+            <a href="https://lulu-cao.github.io/euie/">
+              <div id="euie" class="projectLinks"></div>
+              <div class="projectTitle">
+                <h3>Euie's Story</h3>
+                <p>JavaScript, HTML, CSS</p>
+              </div>
+            </a>
           </div>
 
           <div class="projectItems">
-            <div id="huge" class="projectLinks"></div>
-            <div class="projectTitle">
-              <h3>
-                <a href="https://lulu-cao.github.io/hu-ge-fansite/"
-                  >Hu Ge Fan Site</a
-                >
-              </h3>
-              <p>HTML, CSS</p>
-            </div>
+            <a href="https://lulu-cao.github.io/hu-ge-fansite/"
+              ><div id="huge" class="projectLinks"></div>
+              <div class="projectTitle">
+                <h3>Hu Ge Fan Site</h3>
+                <p>HTML, CSS</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>

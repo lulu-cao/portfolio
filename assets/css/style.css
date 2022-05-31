@@ -21,22 +21,28 @@ h2 {
   font-size: 2vw;
 }
 
-/* set up profile pic as the night sky */
+/* set up profile pic */
 #profilepic {
   background-image: url("../image/profilepic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: darkcyan;
-  height: 768px;
+  height: 48rem;
   width: 100%;
 }
 
-#line1 {
+#line1,
+#line2 {
   text-align: center;
   padding-top: 25%;
   color: black;
   margin: 0;
   line-height: 1;
+  text-shadow: 0.1rem 0.1rem 0.4rem var(--text);
+}
+
+#line1 {
+  padding-top: 25%;
 }
 
 #line1 span {
@@ -44,14 +50,10 @@ h2 {
 }
 
 #line2 {
-  text-align: center;
   padding-top: 3%;
-  color: black;
-  margin: 0;
-  line-height: 1;
 }
 
-/* make the header of the page contain name on the left and navbar on the right */
+/* design navbar */
 header {
   padding: 10px;
   display: flex;
@@ -82,7 +84,6 @@ nav a {
   padding: 5px 5px;
 }
 
-/* inset shadows will appear inside the borders once hovering */
 nav a:hover {
   transition: all 0.5s ease-in-out;
   text-shadow: 0.6px 0.6px var(--text);
@@ -114,6 +115,10 @@ main section {
   font-size: 18px;
 }
 
+#about p {
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--back);
+}
+
 #myphoto {
   height: 200px;
   width: 200px;
@@ -132,6 +137,10 @@ main section {
   border-right: 5px solid var(--text);
   flex: 0 0 15%;
 } */
+
+#projects h1 {
+  text-shadow: 0.2rem 0.2rem 0.5rem var(--back);
+}
 
 #projectContainer {
   width: 1100px;
@@ -153,11 +162,12 @@ main section {
 .projectItems {
   display: inline-block;
   width: 32%;
-  height: 260px;
+  height: 15.8rem;
   margin-top: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--main);
 }
 
-.projectLinks:hover {
+.projectItems:hover {
   background-blend-mode: soft-light;
   transition: all 0.5s;
   background-color: var(--main);
@@ -256,13 +266,13 @@ address a:hover {
     text-align: right;
     padding-top: 360px;
     font-weight: 730;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   #line2 {
     text-align: right;
     font-weight: 730;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   #projects h1 {
@@ -291,6 +301,15 @@ address a:hover {
   .container {
     max-width: 400px;
     overflow: hidden;
+  }
+
+  #line1 {
+    padding-top: 21rem;
+  }
+
+  #line1,
+  #line2 {
+    font-size: 1.1rem;
   }
 
   .projects {
