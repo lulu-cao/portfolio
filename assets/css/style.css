@@ -21,12 +21,13 @@ h2 {
   font-size: 2vw;
 }
 
-/* set up profile pic */
+/* set up profile pic and headlines */
 #profilepic {
   background-image: url("../image/profilepic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: darkcyan;
+  background-position: center;
   height: 48rem;
   width: 100%;
 }
@@ -34,15 +35,14 @@ h2 {
 #line1,
 #line2 {
   text-align: center;
-  padding-top: 25%;
   color: black;
   margin: 0;
   line-height: 1;
-  text-shadow: 0.1rem 0.1rem 0.4rem var(--text);
+  text-shadow: 0.05rem 0.05rem 0.4rem white;
 }
 
 #line1 {
-  padding-top: 25%;
+  padding-top: 17rem;
 }
 
 #line1 span {
@@ -82,6 +82,8 @@ nav a {
   text-decoration: underline;
   margin-right: 10px;
   padding: 5px 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 nav a:hover {
@@ -110,7 +112,7 @@ main section {
 #about div {
   text-align: center;
   align-items: center;
-  margin: 15% auto;
+  margin: 10% auto;
   line-height: 2;
   font-size: 18px;
 }
@@ -123,6 +125,7 @@ main section {
   height: 200px;
   width: 200px;
   margin-bottom: 30px;
+  border-radius: 2%;
 }
 
 /* the project section */
@@ -250,31 +253,7 @@ address a:hover {
 }
 
 /* mobile responsive */
-@media screen and (max-width: 1024px) {
-  #line1 {
-    padding-top: 310px;
-    padding-left: 20px;
-  }
-
-  #line2 {
-    padding-left: 20px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  #line1 {
-    text-align: right;
-    padding-top: 360px;
-    font-weight: 730;
-    font-size: 1.5rem;
-  }
-
-  #line2 {
-    text-align: right;
-    font-weight: 730;
-    font-size: 1.5rem;
-  }
-
   #projects h1 {
     border-right: none;
     text-align: center;
@@ -303,16 +282,54 @@ address a:hover {
     overflow: hidden;
   }
 
+  #profilepic {
+    height: 40rem;
+  }
+
   #line1 {
-    padding-top: 21rem;
+    padding-top: 14rem;
+    font-size: 1.7rem;
   }
 
-  #line1,
   #line2 {
-    font-size: 1.1rem;
+    padding: 2rem 0;
+    font-size: 1.5rem;
   }
 
-  .projects {
-    width: 300px;
+  #my-name {
+    display: none;
+  }
+
+  nav {
+    height: 4rem;
+  }
+
+  #about p {
+    text-indent: 2rem;
+    text-align: justify;
+    margin: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  footer h3 {
+    display: none;
+  }
+
+  #contact {
+    padding-left: 30%;
+    padding-right: auto;
+    text-align: center;
+  }
+
+  #contact a {
+    padding-bottom: 0.8rem;
+  }
+
+  .projectItems {
+    width: 90%;
+  }
+
+  #projectContainer {
+    margin-left: 8%;
   }
 }
