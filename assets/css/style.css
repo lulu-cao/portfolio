@@ -85,7 +85,7 @@ nav {
 nav a {
   font-size: 18px;
   text-decoration: underline;
-  padding: 0.5rem 0.7rem;
+  padding: 0 0.7rem;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -175,12 +175,12 @@ main section {
   height: 15.8rem;
   margin-top: 2rem;
   box-shadow: 0.2rem 0.2rem 0.5rem var(--main);
+  transition: all 1s;
 }
 
 .projectItems:hover {
-  background-blend-mode: soft-light;
-  transition: all 0.5s;
   background-color: var(--main);
+  box-shadow: 0 0 2rem 0.5rem var(--main);
 }
 
 .projectTitle {
@@ -198,13 +198,19 @@ main section {
 #huge {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 200px;
   width: 100%;
 }
 
 #ethics {
-  background-image: url("../image/ethics.png");
+  background-image: url("../image/ethics-cover.jpg");
+  /* transition: all 1.5s ease-in-out; */
 }
+
+/* #ethics:hover {
+  background-image: url("../image/ethics.jpg");
+} */
 
 #zhanshu {
   background-image: url("../image/zhanshu.png");

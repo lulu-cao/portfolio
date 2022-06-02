@@ -1,0 +1,777 @@
+/* make stars shine */
+.star {
+  background-color: var(--text);
+  opacity: 0.3;
+  height: 0.1rem;
+  width: 0.1rem;
+  position: fixed;
+  border-radius: 50%;
+  transition: all 1ms;
+}
+
+.star:hover {
+  box-shadow: 0 0 0.5rem 0.5rem var(--text);
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+}
+
+#star0 {
+  top: 2rem;
+  left: 2rem;
+}
+
+#star1 {
+  top: 4rem;
+  left: 2rem;
+}
+
+#star2 {
+  top: 6rem;
+  left: 2rem;
+}
+
+#star3 {
+  top: 8rem;
+  left: 2rem;
+}
+
+#star4 {
+  top: 10rem;
+  left: 2rem;
+}
+
+#star5 {
+  top: 12rem;
+  left: 2rem;
+}
+
+#star6 {
+  top: 14rem;
+  left: 2rem;
+}
+
+#star7 {
+  top: 16rem;
+  left: 2rem;
+}
+
+#star8 {
+  top: 18rem;
+  left: 2rem;
+}
+
+#star9 {
+  top: 20rem;
+  left: 2rem;
+}
+
+#star10 {
+  top: 22rem;
+  left: 2rem;
+}
+
+#star11 {
+  top: 24rem;
+  left: 2rem;
+}
+
+#star12 {
+  top: 26rem;
+  left: 2rem;
+}
+
+#star13 {
+  top: 28rem;
+  left: 2rem;
+}
+
+#star14 {
+  top: 30rem;
+  left: 2rem;
+}
+
+#star15 {
+  top: 32rem;
+  left: 2rem;
+}
+
+#star16 {
+  top: 34rem;
+  left: 2rem;
+}
+
+#star17 {
+  top: 36rem;
+  left: 2rem;
+}
+
+#star18 {
+  top: 38rem;
+  left: 2rem;
+}
+
+#star19 {
+  top: 40rem;
+  left: 2rem;
+}
+
+#star20 {
+  top: 42rem;
+  left: 2rem;
+}
+
+#star21 {
+  top: 44rem;
+  left: 2rem;
+}
+
+#star22 {
+  top: 46rem;
+  left: 2rem;
+}
+
+#star23 {
+  top: 48rem;
+  left: 2rem;
+}
+
+#star24 {
+  top: 2rem;
+  left: 4rem;
+}
+
+#star25 {
+  top: 4rem;
+  left: 4rem;
+}
+
+#star26 {
+  top: 6rem;
+  left: 4rem;
+}
+
+#star27 {
+  top: 8rem;
+  left: 4rem;
+}
+
+#star28 {
+  top: 10rem;
+  left: 4rem;
+}
+
+#star29 {
+  top: 12rem;
+  left: 4rem;
+}
+
+#star30 {
+  top: 14rem;
+  left: 4rem;
+}
+
+#star31 {
+  top: 16rem;
+  left: 4rem;
+}
+
+#star32 {
+  top: 18rem;
+  left: 4rem;
+}
+
+#star33 {
+  top: 20rem;
+  left: 4rem;
+}
+
+#star34 {
+  top: 22rem;
+  left: 4rem;
+}
+
+#star35 {
+  top: 24rem;
+  left: 4rem;
+}
+
+#star36 {
+  top: 26rem;
+  left: 4rem;
+}
+
+#star37 {
+  top: 28rem;
+  left: 4rem;
+}
+
+#star38 {
+  top: 30rem;
+  left: 4rem;
+}
+
+#star39 {
+  top: 32rem;
+  left: 4rem;
+}
+
+#star40 {
+  top: 34rem;
+  left: 4rem;
+}
+
+#star41 {
+  top: 36rem;
+  left: 4rem;
+}
+
+#star42 {
+  top: 38rem;
+  left: 4rem;
+}
+
+#star43 {
+  top: 40rem;
+  left: 4rem;
+}
+
+#star44 {
+  top: 42rem;
+  left: 4rem;
+}
+
+#star45 {
+  top: 44rem;
+  left: 4rem;
+}
+
+#star46 {
+  top: 46rem;
+  left: 4rem;
+}
+
+#star47 {
+  top: 48rem;
+  left: 4rem;
+}
+
+#star48 {
+  top: 2rem;
+  left: 6rem;
+}
+
+#star49 {
+  top: 4rem;
+  left: 6rem;
+}
+
+#star50 {
+  top: 6rem;
+  left: 6rem;
+}
+
+#star51 {
+  top: 8rem;
+  left: 6rem;
+}
+
+#star52 {
+  top: 10rem;
+  left: 6rem;
+}
+
+#star53 {
+  top: 12rem;
+  left: 6rem;
+}
+
+#star54 {
+  top: 14rem;
+  left: 6rem;
+}
+
+#star55 {
+  top: 16rem;
+  left: 6rem;
+}
+
+#star56 {
+  top: 18rem;
+  left: 6rem;
+}
+
+#star57 {
+  top: 20rem;
+  left: 6rem;
+}
+
+#star58 {
+  top: 22rem;
+  left: 6rem;
+}
+
+#star59 {
+  top: 24rem;
+  left: 6rem;
+}
+
+#star60 {
+  top: 26rem;
+  left: 6rem;
+}
+
+#star61 {
+  top: 28rem;
+  left: 6rem;
+}
+
+#star62 {
+  top: 30rem;
+  left: 6rem;
+}
+
+#star63 {
+  top: 32rem;
+  left: 6rem;
+}
+
+#star64 {
+  top: 34rem;
+  left: 6rem;
+}
+
+#star65 {
+  top: 36rem;
+  left: 6rem;
+}
+
+#star66 {
+  top: 38rem;
+  left: 6rem;
+}
+
+#star67 {
+  top: 40rem;
+  left: 6rem;
+}
+
+#star68 {
+  top: 42rem;
+  left: 6rem;
+}
+
+#star69 {
+  top: 44rem;
+  left: 6rem;
+}
+
+#star70 {
+  top: 46rem;
+  left: 6rem;
+}
+
+#star71 {
+  top: 48rem;
+  left: 6rem;
+}
+
+#star72 {
+  top: 2rem;
+  left: 8rem;
+}
+
+#star73 {
+  top: 4rem;
+  left: 8rem;
+}
+
+#star74 {
+  top: 6rem;
+  left: 8rem;
+}
+
+#star75 {
+  top: 8rem;
+  left: 8rem;
+}
+
+#star76 {
+  top: 10rem;
+  left: 8rem;
+}
+
+#star77 {
+  top: 12rem;
+  left: 8rem;
+}
+
+#star78 {
+  top: 14rem;
+  left: 8rem;
+}
+
+#star79 {
+  top: 16rem;
+  left: 8rem;
+}
+/* 
+#star80 {
+  top: 18rem;
+  left: 8rem;
+}
+
+#star81 {
+  top: 20rem;
+  left: 8rem;
+}
+
+#star82 {
+  top: 22rem;
+  left: 8rem;
+}
+
+#star91 {
+  top: 24rem;
+  left: 8rem;
+}
+
+#star92 {
+  top: 26rem;
+  left: 8rem;
+}
+
+#star93 {
+  top: 28rem;
+  left: 8rem;
+}
+
+#star94 {
+  top: 30rem;
+  left: 8rem;
+}
+
+#star95 {
+  top: 32rem;
+  left: 8rem;
+}
+
+#star96 {
+  top: 34rem;
+  left: 8rem;
+}
+
+#star97 {
+  top: 36rem;
+  left: 8rem;
+}
+
+#star98 {
+  top: 38rem;
+  left: 8rem;
+}
+
+#star99 {
+  top: 40rem;
+  left: 8rem;
+}
+
+#star100 {
+  top: 42rem;
+  left: 8rem;
+}
+
+#star101 {
+  top: 44rem;
+  left: 8rem;
+}
+
+#star102 {
+  top: 46rem;
+  left: 8rem;
+}
+
+#star103 {
+  top: 48rem;
+  left: 8rem;
+}
+
+#star104 {
+  top: 2rem;
+  left: 10rem;
+}
+
+#star105 {
+  top: 4rem;
+  left: 8rem;
+}
+
+#star106 {
+  top: 6rem;
+  left: 8rem;
+}
+
+#star107 {
+  top: 8rem;
+  left: 4rem;
+}
+
+#star108 {
+  top: 10rem;
+  left: 4rem;
+}
+
+#star109 {
+  top: 12rem;
+  left: 4rem;
+}
+
+#star110 {
+  top: 14rem;
+  left: 4rem;
+}
+
+#star111 {
+  top: 16rem;
+  left: 4rem;
+}
+
+#star112 {
+  top: 18rem;
+  left: 4rem;
+}
+
+#star113 {
+  top: 20rem;
+  left: 4rem;
+}
+
+#star114 {
+  top: 22rem;
+  left: 4rem;
+}
+
+#star115 {
+  top: 24rem;
+  left: 4rem;
+}
+
+#star116 {
+  top: 26rem;
+  left: 4rem;
+}
+
+#star117 {
+  top: 28rem;
+  left: 4rem;
+}
+
+#star118 {
+  top: 30rem;
+  left: 4rem;
+}
+
+#star119 {
+  top: 32rem;
+  left: 4rem;
+}
+
+#star120 {
+  top: 34rem;
+  left: 4rem;
+}
+
+#star121 {
+  top: 36rem;
+  left: 4rem;
+}
+
+#star122 {
+  top: 38rem;
+  left: 4rem;
+}
+
+#star123 {
+  top: 40rem;
+  left: 4rem;
+}
+
+#star124 {
+  top: 42rem;
+  left: 4rem;
+}
+
+#star125 {
+  top: 44rem;
+  left: 4rem;
+}
+
+#star126 {
+  top: 46rem;
+  left: 4rem;
+}
+
+#star127 {
+  top: 48rem;
+  left: 4rem;
+}
+
+#star128 {
+  top: 2rem;
+  left: 6rem;
+}
+
+#star129 {
+  top: 4rem;
+  left: 6rem;
+}
+
+#star130 {
+  top: 6rem;
+  left: 6rem;
+}
+
+#star131 {
+  top: 8rem;
+  left: 6rem;
+}
+
+#star132 {
+  top: 10rem;
+  left: 6rem;
+}
+
+#star133 {
+  top: 12rem;
+  left: 6rem;
+}
+
+#star134 {
+  top: 14rem;
+  left: 6rem;
+}
+
+#star135 {
+  top: 16rem;
+  left: 6rem;
+}
+
+#star136 {
+  top: 18rem;
+  left: 6rem;
+}
+
+#star137 {
+  top: 20rem;
+  left: 6rem;
+}
+
+#star138 {
+  top: 22rem;
+  left: 6rem;
+}
+
+#star139 {
+  top: 24rem;
+  left: 6rem;
+}
+
+#star140 {
+  top: 26rem;
+  left: 6rem;
+}
+
+#star141 {
+  top: 28rem;
+  left: 6rem;
+}
+
+#star142 {
+  top: 30rem;
+  left: 6rem;
+}
+
+#star143 {
+  top: 32rem;
+  left: 6rem;
+}
+
+#star144 {
+  top: 34rem;
+  left: 6rem;
+}
+
+#star145 {
+  top: 36rem;
+  left: 6rem;
+}
+
+#star146 {
+  top: 38rem;
+  left: 6rem;
+}
+
+#star147 {
+  top: 40rem;
+  left: 6rem;
+}
+
+#star148 {
+  top: 42rem;
+  left: 6rem;
+}
+
+#star149 {
+  top: 44rem;
+  left: 6rem;
+}
+
+#star150 {
+  top: 46rem;
+  left: 6rem;
+}
+
+#star151 {
+  top: 48rem;
+  left: 6rem;
+}
+
+#star152 {
+  top: 2rem;
+  left: 8rem;
+}
+
+#star153 {
+  top: 4rem;
+  left: 4rem;
+}
+
+#star154 {
+  top: 6rem;
+  left: 4rem;
+}
+
+#star155 {
+  top: 8rem;
+  left: 4rem;
+}
+
+#star156 {
+  top: 10rem;
+  left: 4rem;
+}
+
+#star157 {
+  top: 12rem;
+  left: 4rem;
+}
+
+#star158 {
+  top: 14rem;
+  left: 4rem;
+}
+
+#star159 {
+  top: 16rem;
+  left: 4rem;
+} */
