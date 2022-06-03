@@ -11,6 +11,22 @@ body {
   background-color: var(--background);
 }
 
+body::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: calc(var(--y, 0) * 1px - 50px);
+  left: calc(var(--x, 0) * 1px - 50px);
+  opacity: 0;
+  background: radial-gradient(white, #3984ff00 80%);
+  transition: opacity 2ms;
+}
+
+body:hover::after {
+  opacity: 0.4;
+}
+
 h1 {
   font-size: 2.5rem;
   margin: 2%;
@@ -88,6 +104,8 @@ nav a {
   padding: 0 0.7rem;
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 nav a:hover {
