@@ -1,14 +1,16 @@
 /* setting the variables for colors to use in the website */
 :root {
-  --main: lightblue;
-  --text: white;
-  --background: black;
+  --middle: #a6a6a6;
+  --lightest: #f2f2f2;
+  --seconddark: #262626;
+  --secondlight: #a6a6a6;
+  --darkest: #0d0d0d;
 }
 
 /* setting the general style of body and different titles */
 body {
-  color: var(--text);
-  background-color: var(--background);
+  color: var(--lightest);
+  background-color: var(--darkest);
 }
 
 body::after {
@@ -79,7 +81,7 @@ footer h3 {
   /* background-image: url("../image/profilepic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--background);
+  background-color: var(--darkest);
   background-position: center; */
   background: #000 url(../image/stars.png) repeat top center;
   z-index: 1;
@@ -90,10 +92,10 @@ footer h3 {
 #line1,
 #line2 {
   text-align: center;
-  color: black;
+  color: var(--lightest);
   margin: 0;
   line-height: 1;
-  text-shadow: 0.05rem 0.05rem 0.3rem white;
+  text-shadow: 0.05rem 0.05rem 0.2rem var(--lightest);
   position: relative;
   z-index: 3;
 }
@@ -114,19 +116,26 @@ footer h3 {
 
 /* design navbar */
 header {
+  color: var(--darkest);
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(1, 4, 41);
-  z-index: 3;
-  position: relative;
+  background-color: var(--secondlight);
+  z-index: 4;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#navIcon {
+  margin-left: 20rem;
 }
 
 nav {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
@@ -145,7 +154,7 @@ nav a {
 
 nav a:hover {
   transition: all 0.5s ease-in-out;
-  text-shadow: 0.6px 0.6px var(--text);
+  text-shadow: 0.6px 0.6px var(--seconddark);
 }
 
 /* the main section */
@@ -179,7 +188,7 @@ main section {
 }
 
 #about p {
-  text-shadow: 0.2rem 0.2rem 0.3rem var(--background);
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--darkest);
   text-indent: 2rem;
   text-align: justify;
   margin: 1.1rem;
@@ -206,7 +215,7 @@ main section {
 } */
 
 #projects h1 {
-  text-shadow: 0.2rem 0.2rem 0.5rem var(--background);
+  text-shadow: 0.2rem 0.2rem 0.5rem var(--darkest);
   margin-left: 7.5%;
 }
 
@@ -219,7 +228,7 @@ main section {
 .project-pic {
   /* display: flex;
     align-items: flex-end; */
-  border: 1px solid var(--main);
+  border: 1px solid var(--middle);
   background-size: 150%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 8px 10px;
@@ -231,13 +240,13 @@ main section {
   width: 90%;
   height: 15.8rem;
   margin-top: 2rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem var(--main);
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--middle);
   transition: all 1s;
 }
 
 .projectItems:hover {
-  background-color: var(--main);
-  box-shadow: 0 0 2rem 0.5rem var(--main);
+  background-color: var(--middle);
+  box-shadow: 0 0 2rem 0.5rem var(--middle);
 }
 
 .projectTitle {
@@ -287,15 +296,18 @@ main section {
 
 /* the contact section, aka the footer*/
 footer {
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(1, 4, 41);
+  background-color: var(--secondlight);
   z-index: 3;
   position: relative;
+  color: var(--darkest);
 }
 
 address {
@@ -314,7 +326,7 @@ address a {
 
 address a:hover {
   transition: all 0.5s ease-in-out;
-  text-shadow: 0.6px 0.6px var(--text);
+  text-shadow: 0.6px 0.6px var(--darkest);
 }
 
 footer {
@@ -344,6 +356,14 @@ footer a {
 
   #projects h1 {
     font-size: 2.4rem;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  #navIcon {
+    display: none;
   }
 }
 
@@ -399,11 +419,8 @@ footer a {
   }
 
   footer {
-    padding-left: 10px;
+    padding: 0;
     justify-content: space-between;
-  }
-
-  footer a {
-    padding-bottom: 0;
+    height: 3.5rem;
   }
 }
