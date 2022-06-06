@@ -11,13 +11,29 @@ navItems.addEventListener("mouseover", (e) => {
   navItems.style.setProperty("--y", e.clientY - y);
 });
 
+const navBar = document.querySelector("nav");
 const navIcon = document.getElementById("navIcon");
-navIcon.addEventListener("click", navShow);
+const navIconX = document.getElementById("navIconX");
+
 function navShow() {
-  const navBar = document.querySelector("nav");
-  if (navBar.style.display == "flex") {
-    navBar.style.display = "none";
-  } else {
-    navBar.style.display = "flex";
-  }
+  navBar.style.display = "flex";
+  navIconX.style.opacity = "1";
+  navIcon.style.opacity = "0.5";
+  navIcon.style.width = 0;
+  navIcon.style.height = 0;
+  navIconX.style.width = 26;
+  navIconX.style.height = 26;
 }
+
+function navHide() {
+  navBar.style.display = "none";
+  navIconX.style.opacity = "0.5";
+  navIcon.style.opacity = "1";
+  navIconX.style.width = 0;
+  navIconX.style.height = 0;
+  navIcon.style.width = 26;
+  navIcon.style.height = 26;
+}
+
+navIcon.addEventListener("click", navShow);
+navIconX.addEventListener("click", navHide);

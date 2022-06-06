@@ -131,7 +131,21 @@ header {
 }
 
 #navIcon {
-  margin-left: 20rem;
+  margin-left: 25rem;
+  transition: opacity 0.5s;
+}
+
+#navIconX {
+  margin-left: 25rem;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: opacity 0.5s;
+}
+
+#navIcon:hover,
+#navIconX:hover {
+  background-color: var(--lightest);
 }
 
 nav {
@@ -362,7 +376,8 @@ footer a {
     display: flex;
   }
 
-  #navIcon {
+  #navIcon,
+  #navIconX {
     display: none;
   }
 }
