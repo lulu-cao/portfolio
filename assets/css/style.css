@@ -123,7 +123,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--secondlight);
+  background-color: var(--lightest);
   z-index: 4;
   position: sticky;
   position: -webkit-sticky;
@@ -131,21 +131,17 @@ header {
 }
 
 #navIcon {
-  margin-left: 25rem;
-  transition: opacity 0.5s;
+  margin-left: 20rem;
 }
 
 #navIconX {
-  margin-left: 25rem;
-  opacity: 0;
-  width: 0;
-  height: 0;
-  transition: opacity 0.5s;
+  margin-left: 20rem;
+  display: none;
 }
 
 #navIcon:hover,
 #navIconX:hover {
-  background-color: var(--lightest);
+  background-color: var(--secondlight);
 }
 
 nav {
@@ -318,7 +314,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--secondlight);
+  background-color: var(--lightest);
   z-index: 3;
   position: relative;
   color: var(--darkest);

@@ -17,22 +17,14 @@ const navIconX = document.getElementById("navIconX");
 
 function navShow() {
   navBar.style.display = "flex";
-  navIconX.style.opacity = "1";
-  navIcon.style.opacity = "0.5";
-  navIcon.style.width = 0;
-  navIcon.style.height = 0;
-  navIconX.style.width = 26;
-  navIconX.style.height = 26;
+  navIconX.style.display = "block";
+  navIcon.style.display = "none";
 }
 
 function navHide() {
   navBar.style.display = "none";
-  navIconX.style.opacity = "0.5";
-  navIcon.style.opacity = "1";
-  navIconX.style.width = 0;
-  navIconX.style.height = 0;
-  navIcon.style.width = 26;
-  navIcon.style.height = 26;
+  navIconX.style.display = "none";
+  navIcon.style.display = "block";
 }
 
 navIcon.addEventListener("click", navShow);
