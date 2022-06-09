@@ -110,6 +110,7 @@ footer h3 {
   opacity: 1;
   animation-name: line1animation;
   animation-duration: 6s;
+  animation-delay: -2s;
 }
 
 @keyframes line1animation {
