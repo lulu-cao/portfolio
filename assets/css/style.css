@@ -105,13 +105,39 @@ footer h3 {
 } */
 
 #line1 {
-  padding-top: 14rem;
+  padding-top: 15rem;
   font-size: 1.7rem;
+  opacity: 1;
+  animation-name: line1animation;
+  animation-duration: 6s;
+}
+
+@keyframes line1animation {
+  from {
+    opacity: 0;
+    padding-top: 10rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 15rem;
+  }
 }
 
 #line2 {
   padding: 2rem 0;
   font-size: 1.5rem;
+  opacity: 1;
+  animation-name: occur;
+  animation-duration: 6s;
+}
+
+@keyframes occur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* design navbar */

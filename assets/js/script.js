@@ -11,6 +11,7 @@ navItems.addEventListener("mouseover", (e) => {
   navItems.style.setProperty("--y", e.clientY - y);
 });
 
+// show detailed navbar on click for small screens
 const navBar = document.querySelector("nav");
 const navIcon = document.getElementById("navIcon");
 const navIconX = document.getElementById("navIconX");
@@ -29,3 +30,11 @@ function navHide() {
 
 navIcon.addEventListener("click", navShow);
 navIconX.addEventListener("click", navHide);
+
+// set time out for greetings
+// const myTimeout = setTimeout(greetings, 1000);
+
+// function greetings() {
+//   document.getElementById("line2").innerHTML =
+//     "I'm a full-stack web developer.";
+// }
