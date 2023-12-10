@@ -259,72 +259,91 @@ main section {
   margin-left: 8%;
 }
 
+.project-subcontainer {
+  display: flex;
+}
+
+.project-demo, .project-description {
+  align-self: center;
+}
+
+.project-description {
+  width: 40vw;
+  margin-left: 2rem;
+}
+
+.project-description p {
+  padding-bottom: 1rem;
+}
+
 /* setting up the class for each separate project */
 .project-pic {
   border: 1px solid var(--middle);
-  background-size: 150%;
+  /* background-size: 150%; */
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 10px;
   border-radius: 1% 1% 0 0;
 }
 
-.projectItems {
+.project-demo {
   display: inline-block;
-  width: 90%;
-  height: 15.8rem;
+  /* width: 90%;
+  height: 15.8rem; */
+  width: fit-content;
+  height: fit-content;
   margin-top: 2rem;
+  margin-right: 2rem;
   box-shadow: 0.2rem 0.2rem 0.5rem var(--middle);
   transition: all 1s;
 }
 
-.projectItems:hover {
+.project-demo:hover {
   background-color: var(--middle);
   box-shadow: 0 0 2rem 0.5rem var(--middle);
 }
 
-.projectTitle {
-  background-color: lightblue;
-  opacity: 80%;
-  padding: 3px 5px;
-  color: black;
-  border-radius: 0 0 1% 1%;
-}
-
-#ethics,
-#zhanshu,
-#cultivate,
-#euie,
-#huge {
+#kci,
+#durham,
+#cardinal,
+#restart,
+#choa,
+#unmc {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
+  width: 500px;
+  height: 300px;
 }
 
-#ethics {
-  background-image: url("../image/ethics-cover.jpg");
-  /* transition: all 1.5s ease-in-out; */
+#kci {
+  background-image: url("../demo/demo-centro.png");
+  width: 540px;
+  height: 300px;
 }
 
-/* #ethics:hover {
-  background-image: url("../image/ethics.jpg");
-} */
-
-#zhanshu {
-  background-image: url("../image/zhanshu.png");
+#durham {
+  background-image: url("../demo/demo-durham-bull.png");
+  width: 432px;
+  height: 688px;
 }
 
-#cultivate {
-  background-image: url("../image/cultivate-community.png");
+#cardinal {
+  background-image: url("../demo/demo-cardinal-main.png");
 }
 
-#euie {
-  background-image: url("../image/euie.jpg");
+#restart {
+  background-image: url("../demo/demo-di-status-service.png");
 }
 
-#huge {
-  background-image: url("../image/huge.jpg");
+#choa {
+  background-image: url("../demo/demo-choa-mobile.png");
+  width: 376px;
+  height: 848px;
+}
+
+#unmc {
+  background-image: url("../demo/demo-unmc.png");
+  width: 432px;
+  height: 688px;
 }
 
 /* the contact section, aka the footer*/
@@ -383,7 +402,7 @@ footer a {
     font-size: 2.2rem;
   }
 
-  .projectItems {
+  .project-demo {
     width: 45%;
     margin-right: 0.6rem;
   }
@@ -443,7 +462,7 @@ footer a {
     font-size: 3rem;
   }
 
-  .projectItems {
+  .project-demo {
     width: 30%;
     margin-right: 0.9rem;
   }

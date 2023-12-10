@@ -16,8 +16,16 @@
     <!-- the first page of the portfolio -->
     <div class="twinkling"></div>
     <div id="profilepic" class="container">
-      <h1 id="line1">Hello, I'm <span>Lulu Cao</span>.</h1>
-      <h1 id="line2">I'm a full-stack web developer.</h1>
+      <h1 id="line1">
+        Do you know programming is ultimately logic?
+        <br/>
+        Do you know logic is a branch of philosophy?
+      </h1>
+      <h1 id="line2">
+        Hello, I'm <span>Lulu Cao</span>
+        <br/>
+        A full-stack developer and a philosopher
+      </h1>
     </div>
 
     <!-- setting up the header and navbar -->
@@ -63,22 +71,18 @@
       <section id="about" class="container">
         <div>
           <img
-            src="./assets/image/myphoto.jpg"
+            src="./assets/image/myphoto.png"
             alt="Lulu's photo"
             id="myphoto"
           />
           <p>
-            I am a full-stack web developer, passionate about inspiring designs.
-            My skills include HTML, CSS, JavaScript, jQuery, Bootstrap, Node.js,
-            and responsive design.
+            Dimensional Innovations
+            Full-Stack Developer I
           </p>
           <p>
-            I am a philosopher with wild imagination. I like to contemplate who
-            I am, where I will be, and what the best action is.
-          </p>
-          <p>
-            In my free time, I like painting, disc golfing, spending time with
-            my husband and our kitties.
+            Kansas City Women in Technology
+            Curriculum Director @ Coding and Cocktails Program
+            Program Co-Director @ TechTalks Program
           </p>
         </div>
       </section>
@@ -89,66 +93,93 @@
         <h1>Projects</h1>
 
         <div id="projectContainer">
-          <div class="projectItems">
-            <a href="https://lulu-cao.github.io/zhanshu_electronic/">
-              <div id="zhanshu" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Durham Bulls Exhibit</h3>
-                <p>VueJS, Tailwind</p>
-              </div>
-            </a>
+          <!-- KCI Centro -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <!-- <a href="https://lulu-cao.github.io/zhanshu_electronic/"> -->
+                <div id="kci" class="project-pic"></div>
+              <!-- </a> -->
+            </div>
+            <div class="project-description">
+              <h3>Kansas City International Airport Content Management System</h3>
+              <p>This is my biggest project at Dimensional Innovations, where I leveraged multiple tech stacks to create and deploy a content management system (CMS) for the Kansas City International Airport. It stores data and provides API for at least 5 frontend apps. During the development process, I also worked on our windows service scripts that interact with REST APIs from green hippo for media playing. </p>
+              <p>Highlight: Half of this project involves writing up express routers to migrate all data from our previous Django CMS to this new CMS and serve data in the same data structure for frontend apps. </p>
+              <p>AdminJS, ExpressJS, TypeORM, Postgres, ReactJS, Django, Green Hippo, Docker</p>
+            </div>
           </div>
 
-          <div class="projectItems">
-            <a href="https://lulu-cao.github.io/zhanshu_electronic/">
-              <div id="zhanshu" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Zhanshu Website</h3>
-                <p>HTML, CSS, JavaScript</p>
+          <!-- Durham Bulls -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <div id="durham" class="project-pic"></div>
+            </div>
+            <div class="project-description">
+              <h3>Durham Bulls Exhibit</h3>
+              <p>This is my very first project at Dimensional Innovations, where I created and deployed 2 kiosk apps that are currently on display at Durham Bulls' Baseball Club History & Storytelling Exhibit. This app is one of them. The app starts with an attract loop and follows with introduction, video, and image galleries. </p>
+              <p>Highlight: I created the slide carousel from scratch, which demonstrates my competency for complex calculation and analytical thinking. </p>
+              <p>VueJS, ElectronJS, Tailwind, CSS</p>
               </div>
-            </a>
           </div>
 
-          <div class="projectItems">
-            <a
-              href="https://lulu-cao.github.io/cultivate-community-front-end/index.html"
-            >
-              <div id="cultivate" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Cultivate Community</h3>
-                <p>HTML, Bootstrap, CSS</p>
-              </div>
-            </a>
+          <!-- Cardinal Nations -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <!-- <a
+                href="https://lulu-cao.github.io/cultivate-community-front-end/index.html"
+              > -->
+                <div id="cardinal" class="project-pic"></div>
+              <!-- </a> -->
+            </div>
+            <div class="project-description">
+              <h3>St. Louis Cardinals Hall of Fame and Cardinal Nations</h3>
+              <p>This is one of my most recent projects where I created and deployed three kiosk apps that will be displayed in St. Louis Cardinals Hall of Fame and Museum. Two of the apps are a pair that communicate with each other using websocket to switch maps. The display app displays choropleth maps using LeafletJS and geojson. The control app controls map switching on the display app, allows users to geo search their origin locations, and stores data in our content management system. The keyboard is implemented with the simple-keyboard package. </p>
+              <p>VueJS, LeafletJS, Simple Keyboard, SwiperJS, WebSocket, ElectronJS</p>
+            </div>
           </div>
 
-          <div class="projectItems">
-            <a href="https://lulu-cao.github.io/ethics-class/">
-              <div id="ethics" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Ethics Class</h3>
-                <p>JavaScript, jQuery, Bootstrap</p>
-              </div>
-            </a>
+          <!-- DI-status-service -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <!-- <a href="https://lulu-cao.github.io/ethics-class/"> -->
+                <div id="restart" class="project-pic"></div>
+                <div class="projectTitle">
+                </div>
+              <!-- </a> -->
+            </div>
+            <div class="project-description">
+              <h3>App Restart Service</h3>
+              <p>This is a simple tool for users to monitors various system parameters on a remote PC, and for them to restart any .exe application on that PC. I created a Node.js application and compiled it into a .exe file with nexe package. I added handlers in our content management system for users to send commands to restart desired apps. And I used WebSocket to communicate with servers and send commands to kill processes when requested. </p>
+              <p>NodeJS, WebSocket, AdminJS, Docker</p>
+            </div>
           </div>
 
-          <div class="projectItems">
-            <a href="https://lulu-cao.github.io/euie/">
-              <div id="euie" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Euie's Story</h3>
-                <p>JavaScript, HTML, CSS</p>
-              </div>
-            </a>
+          <!-- choa-mobile-donate -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <!-- <a href="https://lulu-cao.github.io/euie/"> -->
+                <div id="choa" class="project-pic"></div>
+              <!-- </a> -->
+            </div>
+            <div class="project-description">
+              <h3>Mobile Donation Web App</h3>
+              <p>This is a simple web app created for prototyping and concept demonstration. It allows mobile users to choose a donation amount and launch a critter on donor walls. The kind of critter rewarded depends on users' donation amount. It also connects with a Django CMS to store related data and allows users to search their past donations. The final app is a collaborative effort between the developers at Children's Healthcare of Atlanta and me. You can view it here. The part I worked on includes the search page and the thank you page. </p>
+              <p>Highlight: The prototyping project is the first project I have completed from the very beginning to the very end all by myself, from creating AWS buckets and IAM users to setting up GitLab repositories and Docker containerized Django CMS and API, to coding and deploying the mobile website on Heroku. </p>
+              <p>VueJS, Django, Postgres, Heroku, AWS, Docker</p>
+            </div>
           </div>
 
-          <div class="projectItems">
-            <a href="https://lulu-cao.github.io/hu-ge-fansite/"
-              ><div id="huge" class="project-pic"></div>
-              <div class="projectTitle">
-                <h3>Hu Ge Fan Site</h3>
-                <p>HTML, CSS</p>
-              </div>
-            </a>
+          <!-- unmc-biopreparedness -->
+          <div class="project-subcontainer">
+            <div class="project-demo">
+              <!-- <a href="https://lulu-cao.github.io/hu-ge-fansite/" -->
+                <div id="unmc" class="project-pic"></div>
+              <!-- </a> -->
+            </div>
+            <div class="project-description">
+              <h3>Biopreparedness Exhibit</h3>
+              <p>A simple kiosk app that displays video galleries, image galleries, timelines, and third-party mini-games. This app is currently displayed at the Wittson Hall in the University of Nebraska Medical Center, educating the public about biopreparedness. </p>
+              <p>VueJS, ElectronJS, Tailwind, CSS</p>
+            </div>
           </div>
         </div>
       </section>
