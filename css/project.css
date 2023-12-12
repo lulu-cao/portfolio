@@ -1,0 +1,137 @@
+
+/* the project section */
+#projects h1 {
+  text-shadow: 0.05rem 0.05rem 0.05rem var(--lightest);
+  margin-left: 7.5%;
+}
+
+#project-container {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.project-subcontainer {
+  width: 100%;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.project-pic {
+  border: 1px solid var(--middle);
+  background-size: 150%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1% 1% 0 0;
+  width: 100%;
+  min-height: 100px;
+  max-height: 100vh;
+}
+
+.project-demo {
+  width: 100%;
+  display: inline-block;
+  margin-top: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--middle);
+  transition: all 1s;
+}
+
+.project-demo:hover {
+  background-color: var(--middle);
+  box-shadow: 0 0 2rem 0.5rem var(--middle);
+}
+
+#kci,
+#durham,
+#cardinal,
+#restart,
+#choa,
+#unmc {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* width: 500px;
+  height: 300px; */
+}
+
+#kci {
+  background-image: url("../assets/demo/demo-centro.png");
+  /* width: 540px;
+  height: 300px; */
+}
+
+#durham {
+  background-image: url("../assets/demo/demo-durham-bull.png");
+  /* width: 432px;
+  height: 688px; */
+}
+
+#cardinal {
+  background-image: url("../assets/demo/demo-cardinal-main.png");
+}
+
+#restart {
+  background-image: url("../assets/demo/demo-di-status-service.png");
+}
+
+#choa {
+  background-image: url("../assets/demo/demo-choa-mobile.png");
+  /* width: 376px;
+  height: 848px; */
+}
+
+#unmc {
+  background-image: url("../assets/demo/demo-unmc.png");
+  /* width: 432px;
+  height: 688px; */
+}
+
+
+/* mobile responsive */
+@media screen and (min-width: 768px) {
+  .project-subcontainer {
+    display: flex;
+  }
+
+  .project-demo, .project-description {
+    align-self: center;
+  }
+
+  .project-description {
+    width: 40vw;
+    margin-left: 2rem;
+  }
+
+  .project-demo {
+    width: 45%;
+    margin-right: 0.6rem;
+  }
+
+  #projects h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-subcontainer {
+    display: flex;
+  }
+
+  .project-demo, .project-description {
+    align-self: center;
+  }
+
+  .project-description {
+    width: 40vw;
+    margin-left: 2rem;
+  }
+
+  #projects h1 {
+    font-size: 3rem;
+  }
+
+  .project-demo {
+    width: 30%;
+    margin-right: 0.9rem;
+  }
+}
