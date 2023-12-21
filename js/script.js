@@ -21,7 +21,8 @@ const navCloseBtn = document.getElementById("nav-close-button");
 
 function navShow() {
   header.style.height = "15rem";
-  navBar.style.display = "block";
+  navBar.style.display = "flex";
+  navBar.style.height = "fit-content";
   navCloseBtn.style.display = "block";
   hamburgerBtn.style.display = "none";
 }

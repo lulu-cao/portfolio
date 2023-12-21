@@ -176,18 +176,16 @@ footer h3 {
 .nav-container-lg {
   display: none;
   flex-direction: row;
-  flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
-  height: 10rem;
-  width: 100vw!important;
+  height: 15rem;
 }
 
 .nav-container-sm {
   display: none;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  height: 20rem;
-  width: 100vw!important;
+  height: fit-content; /* this will be overriden by the script */
+  width: 100vw;
   align-items: center;
   position: absolute;
   top: 0;
@@ -210,15 +208,16 @@ footer h3 {
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
-  height: 15rem;
+  height: 3rem;
   width: 100%;
   text-align: center;
   /* overflow: hidden; */
 }
 
-.nav-items:hover {
+.nav-item:hover {
   transition: all 0.5s ease-in-out;
   text-shadow: 0.6px 0.6px var(--seconddark);
+  background-color: yellowgreen;
 }
 
 #hamburger-button {
@@ -377,16 +376,23 @@ footer a {
   }
 
   .header-container {
-    height: 3rem;
+    height: 4rem;
+    justify-content: space-between;
   }
 
   .header-logo {
     min-width: 20rem;
     display: inline;
+    font-size: 1.5rem;
   }
 
-  .nav-container {
+  .nav-container-lg {
     display: flex;
+    font-size: 1.5rem;
+  }
+
+  #hamburger-button {
+    display: none;
   }
 
   .project-subcontainer {
@@ -441,12 +447,18 @@ footer a {
     display: block;
   }
 
-  .nav-container {
-    height: 2rem;
+  .nav-container-lg {
+    height: 5rem;
+    font-size: 1.5rem;
   }
 
-  .nav-items {
+  .nav-container-sm {
+    display: none;
+  }
+
+  .nav-item {
     margin-left: 10px;
+    font-size: 1.5rem;
   }
 
   #about p {
