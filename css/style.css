@@ -83,14 +83,14 @@ footer h3 {
 }
 
 .twinkling {
-  background: transparent url(../image/twinkling.png) repeat top center;
+  background: transparent url(../assets/image/twinkling.png) repeat top center;
   z-index: 2;
   animation: move-twinkle-back 200s linear infinite;
 }
 
 /* set up profile pic and headlines */
 #profilepic {
-  background: #000 url(../image/stars.png) repeat top center;
+  background: #000 url(../assets/image/stars.png) repeat top center;
   z-index: 1;
   height: 42rem;
   width: 100%;
@@ -150,14 +150,15 @@ footer h3 {
 }
 
 /* the navbar section */
-header {
+
+/* the navbar section */
+.header-container {
   color: var(--darkest);
   padding: 10px;
   height: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   background-color: var(--lightest);
   z-index: 4;
@@ -165,59 +166,88 @@ header {
   position: -webkit-sticky;
   top: 0;
   box-shadow: 0.05rem 0.05rem 0.1rem var(--lightest);
+  width: 100vw;
 }
 
-#navIcon {
-  /* position: absolute;
-  right: 0.5rem;
-  top: 0.5rem; */
-  margin-left: 20rem;
-  cursor: pointer;
-}
-
-#navIconX {
-  /* position: absolute;
-  right: 0.5rem;
-  top: 0.5rem; */
-  margin-left: 20rem;
+.header-logo {
   display: none;
-  cursor: pointer;
 }
 
-#navIcon:hover,
-#navIconX:hover {
-  background-color: var(--secondlight);
-}
-
-nav {
+.nav-container-lg {
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
-  height: 4rem;
+  height: 10rem;
   width: 100vw!important;
 }
 
-nav a {
+.nav-container-sm {
+  display: none;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 20rem;
+  width: 100vw!important;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-container-lg > .nav-item {
   font-size: 18px;
   text-decoration: underline;
   padding: 0 0.7rem;
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-nav a:hover {
+.nav-container-sm > .nav-item {
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  height: 15rem;
+  width: 100%;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.nav-items:hover {
   transition: all 0.5s ease-in-out;
   text-shadow: 0.6px 0.6px var(--seconddark);
+}
+
+#hamburger-button {
+  /* position: absolute;
+  right: 0.5rem;
+  top: 0.5rem; */
+  margin-left: 20rem;
+  cursor: pointer;
+}
+
+#nav-close-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  z-index: 20;
+  margin-left: 20rem;
+  display: none;
+}
+
+#hamburger-button:hover,
+#nav-close-button:hover {
+  background-color: var(--secondlight);
 }
 
 
 
 /* the about section */
 main {
-  background: #000 url(../image/stars.png) repeat top center;
+  background: #000 url(../assets/image/stars.png) repeat top center;
   z-index: 1;
   /* background-image: url("../image/profilepic2.gif");
   background-size: cover;
@@ -346,6 +376,19 @@ footer a {
     font-size: 2.4rem; /* 2.2 rem*/
   }
 
+  .header-container {
+    height: 3rem;
+  }
+
+  .header-logo {
+    min-width: 20rem;
+    display: inline;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
   .project-subcontainer {
     display: flex;
   }
@@ -362,19 +405,6 @@ footer a {
 
   #projects h1 {
     font-size: 2.4rem;
-  }
-
-  nav {
-    display: flex;
-  }
-
-  #navIcon,
-  #navIconX {
-    display: none;
-  }
-
-  header {
-    height: 3rem;
   }
 }
 
@@ -403,12 +433,20 @@ footer a {
     display: block;
   }
 
-  nav {
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    display: block;
+  }
+
+  .nav-container {
     height: 2rem;
   }
 
-  nav a {
-    margin-right: 10px;
+  .nav-items {
+    margin-left: 10px;
   }
 
   #about p {
@@ -434,13 +472,8 @@ footer a {
     margin-right: 0.9rem;
   }
 
-  header h3,
   footer h3 {
     display: block;
-  }
-
-  header {
-    justify-content: space-between;
   }
 
   footer {

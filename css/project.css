@@ -29,7 +29,8 @@
 }
 
 .project-demo {
-  width: 100%;
+  max-width: 99vw;
+  max-height: 99vh;
   display: inline-block;
   margin-top: 2rem;
   box-shadow: 0.2rem 0.2rem 0.5rem var(--middle);
@@ -41,51 +42,10 @@
   box-shadow: 0 0 2rem 0.5rem var(--middle);
 }
 
-#kci,
-#durham,
-#cardinal,
-#restart,
-#choa,
-#unmc {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* width: 500px;
-  height: 300px; */
+.demo-image {
+  max-width: 99vw;
+  max-height: 99vh;
 }
-
-#kci {
-  background-image: url("../assets/demo/demo-centro.png");
-  /* width: 540px;
-  height: 300px; */
-}
-
-#durham {
-  background-image: url("../assets/demo/demo-durham-bull.png");
-  /* width: 432px;
-  height: 688px; */
-}
-
-#cardinal {
-  background-image: url("../assets/demo/demo-cardinal-main.png");
-}
-
-#restart {
-  background-image: url("../assets/demo/demo-di-status-service.png");
-}
-
-#choa {
-  background-image: url("../assets/demo/demo-choa-mobile.png");
-  /* width: 376px;
-  height: 848px; */
-}
-
-#unmc {
-  background-image: url("../assets/demo/demo-unmc.png");
-  /* width: 432px;
-  height: 688px; */
-}
-
 
 /* mobile responsive */
 @media screen and (min-width: 768px) {

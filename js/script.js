@@ -12,28 +12,29 @@
 //   navItems.style.setProperty("--y", e.clientY - y);
 // });
 
-// show detailed navbar on click for small screens
-const navBar = document.querySelector("nav");
-const header = document.querySelector("header");
-const navIcon = document.getElementById("navIcon");
-const navIconX = document.getElementById("navIconX");
+// show navbar when the hamburger icon is clicked
+// hide navbar when the "x" icon is clicked
+const navBar = document.querySelector(".nav-container-sm");
+const header = document.querySelector(".header-container");
+const hamburgerBtn = document.getElementById("hamburger-button");
+const navCloseBtn = document.getElementById("nav-close-button");
 
 function navShow() {
-  header.style.height = "5rem";
+  header.style.height = "15rem";
   navBar.style.display = "block";
-  navIconX.style.display = "block";
-  navIcon.style.display = "none";
+  navCloseBtn.style.display = "block";
+  hamburgerBtn.style.display = "none";
 }
 
 function navHide() {
-  header.style.height = "2.5rem";
+  header.style.height = "3rem";
   navBar.style.display = "none";
-  navIconX.style.display = "none";
-  navIcon.style.display = "block";
+  navCloseBtn.style.display = "none";
+  hamburgerBtn.style.display = "block";
 }
 
-navIcon.addEventListener("click", navShow);
-navIconX.addEventListener("click", navHide);
+hamburgerBtn.addEventListener("click", navShow);
+navCloseBtn.addEventListener("click", navHide);
 
 // set time out for greetings
 // const myTimeout = setTimeout(greetings, 1000);
