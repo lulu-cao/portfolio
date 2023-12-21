@@ -35,8 +35,8 @@ h1 {
   line-height: 1.5;
 }
 
-header h3,
-footer h3 {
+.header-logo,
+.footer-logo {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin-left: 10px;
@@ -305,6 +305,15 @@ main section {
 
 }
 
+.past-experience-container {
+  width: 100vw;
+  display: flex;
+}
+
+.company-logo {
+  height: 100px;
+  width: 100px;
+}
 
 .photo-lulu {
   max-width: 99vw;
@@ -313,7 +322,7 @@ main section {
   border-radius: 1rem;
 }
 /* the contact section, aka the footer*/
-footer {
+.footer-container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
@@ -348,11 +357,11 @@ address a:hover {
   text-shadow: 0.6px 0.6px var(--darkest);
 }
 
-footer {
+.footer-container {
   text-align: center;
 }
 
-footer a {
+.footer-link {
   padding-bottom: 0.8rem;
 }
 
@@ -466,6 +475,11 @@ footer a {
     text-align: center;
   }
 
+  .past-experience-container {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
   .project-subcontainer {
     display: flex;
   }
@@ -484,11 +498,11 @@ footer a {
     margin-right: 0.9rem;
   }
 
-  footer h3 {
+  .footer-logo {
     display: block;
   }
 
-  footer {
+  .footer-container {
     padding: 0;
     justify-content: space-between;
     height: 3.5rem;
