@@ -16,39 +16,47 @@
   <body>
     <!-- setting up the header and navbar -->
     <header class="header-container">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
-        fill="currentColor"
-        class="bi bi-list"
-        id="navIcon"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
-        fill="currentColor"
-        class="bi bi-x-lg"
-        id="navIconX"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
-      <h3>Lulu Cao</h3>
-      <nav>
-        <a href="./intro.html" class="navItems">About</a>
-        <a href="./project.html" class="navItems">Projects</a>
-        <a href="../assets/resume.pdf" class="navItems">Resume</a>
-        <a href="./interest.html" class="navItems">Interests</a>
+      <div id="hamburger-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <div id="nav-close-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+          />
+        </svg>
+      </div>
+      <h3 class="header-logo">Lulu Cao</h3>
+      <nav class="nav-container-lg">
+        <!-- <a href="./intro.html" class="nav-item">About</a> -->
+        <a href="./project.html" class="nav-item">Projects</a>
+        <a href="./assets/resume.pdf" class="nav-item">Resume</a>
+        <a href="./interest.html" class="nav-item">Interests</a>
+      </nav>
+      <nav class="nav-container-sm">
+        <!-- <a href="./intro.html" class="nav-item">About</a> -->
+        <a href="./project.html" class="nav-item">Projects</a>
+        <a href="./assets/resume.pdf" class="nav-item">Resume</a>
+        <a href="./interest.html" class="nav-item">Interests</a>
       </nav>
     </header>
 
@@ -149,23 +157,23 @@
 
       <br /><br />
 
-      <!-- footer/contact section -->
-      <footer id="contact" class="container">
-        <h3>Lulu Cao</h3>
-        <address>
-          <a href="tel:+18169747106">
-            <img src="../assets/image/telephone-fill.svg" alt="8169747106" />
+      <!-- footer of contact info -->
+      <footer id="contact" class="footer-container">
+        <h3 class="footer-logo">Lulu Cao</h3>
+        <div class="footer-subcontainer">
+          <a href="tel:+18169747106" class="footer-link">
+            <img src="./assets/image/telephone-fill.svg" alt="8169747106" class="footer-icon" />
           </a>
-          <a href="https://www.linkedin.com/in/lulu-cao/">
-            <img src="../assets/image/linkedin.svg" alt="www.linkedin.com/in/lulu-cao/" />
+          <a href="https://www.linkedin.com/in/lulu-cao/" class="footer-link">
+            <img src="./assets/image/linkedin.svg" alt="www.linkedin.com/in/lulu-cao/" class="footer-icon" />
           </a>
-          <a href="https://github.com/lulu-cao">
-            <img src="../assets/image/github.svg" alt="github.com/lulu-cao" />
+          <a href="https://github.com/lulu-cao" class="footer-link">
+            <img src="./assets/image/github.svg" alt="github.com/lulu-cao" class="footer-icon" />
           </a>
-          <a href="mailto: lulu.cao.her@gmail.com">
-            <img src="../assets/image/envelope-fill.svg" alt="lulu.cao.her@gmail.com" />
+          <a href="mailto: lulu.cao.her@gmail.com" class="footer-link">
+            <img src="./assets/image/envelope-fill.svg" alt="lulu.cao.her@gmail.com" class="footer-icon" />
           </a>
-        </address>
+        </div>
       </footer>
     </main>
 
