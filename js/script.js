@@ -20,7 +20,7 @@ const hamburgerBtn = document.getElementById("hamburger-button");
 const navCloseBtn = document.getElementById("nav-close-button");
 
 function navShow() {
-  header.style.height = "13rem";
+  header.style.height = "16rem";
   navBar.style.display = "flex";
   navBar.style.height = "fit-content";
   navCloseBtn.style.display = "block";
@@ -28,7 +28,7 @@ function navShow() {
 }
 
 function navHide() {
-  header.style.height = "3rem";
+  header.style.height = "4rem";
   navBar.style.display = "none";
   navCloseBtn.style.display = "none";
   hamburgerBtn.style.display = "block";
